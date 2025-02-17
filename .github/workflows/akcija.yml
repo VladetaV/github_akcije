@@ -6,6 +6,8 @@ on:
 jobs:
   # Job that scans and analyzes the code
   scan_the_code:
+    permissions:
+      security-events: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
